@@ -54,12 +54,13 @@
     <!-- Your Pages -->
     <TabBar>
         <Tab
-            Title="Browse"
+            Title="Stacje"
             Icon ="tab_feed.png">
             <ShellContent
-                ContentTemplate="{DataTemplate local:ItemsPage}" />
+                ContentTemplate="{DataTemplate local:StationsPage}" />
         </Tab>
-        <Tab
+
+         <Tab
             Title="About"
             Icon ="tab_about.png">
             <ShellContent
