@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using AirPollutionMonitor.Models;
 using AirPollutionMonitor.Services;
@@ -39,7 +40,8 @@ namespace AirPollutionMonitor.ViewModels
             try
             {
                 Stations = null;
-                Stations = await _giosApi.GetStations();
+                var stations = await _giosApi.GetStations();
+                Stations = stations.OrderBy(x => x.StationName).ToList();
             }
             catch (Exception e)
             {
