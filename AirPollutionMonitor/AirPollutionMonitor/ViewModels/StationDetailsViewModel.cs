@@ -43,6 +43,7 @@ namespace AirPollutionMonitor.ViewModels
             }
             catch (Exception e)
             {
+                App.Current.MainPage.DisplayAlert("", e.ToString(), "ok");
                 Debug.WriteLine(e);
             }
             finally
