@@ -38,6 +38,7 @@ namespace AirPollutionMonitor.ViewModels
 
             try
             {
+                Stations = null;
                 Stations = await _giosApi.GetStations();
             }
             catch (Exception e)
