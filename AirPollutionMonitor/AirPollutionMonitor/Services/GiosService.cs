@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Threading.Tasks;
 using AirPollutionMonitor.Models;
 using Refit;

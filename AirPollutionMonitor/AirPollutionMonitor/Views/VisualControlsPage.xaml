@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns ="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AirPollutionMonitor.Views.VisualControlsPage"
+    Visual="Material">
+    
+    <StackLayout Padding="10"
+                 Spacing="30">
+
+        <Frame>
+            <StackLayout>
+                <Entry Placeholder="Enter something" />
+                <Button Text="Click me"/>
+            </StackLayout>
+        </Frame>
+
+        <DatePicker />
+
+        <Slider />
+
+        <ActivityIndicator IsRunning="True" />
+
+    </StackLayout>
+
+</ContentPage>

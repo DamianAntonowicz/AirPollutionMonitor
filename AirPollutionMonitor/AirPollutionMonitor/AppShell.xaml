@@ -8,9 +8,7 @@
     xmlns:local ="clr-namespace:AirPollutionMonitor.Views"
     Title       ="AirPollutionMonitor"
     x:Class     ="AirPollutionMonitor.AppShell">
-    <!-- 
-        Styles and Resources 
-    -->
+
     <Shell.Resources>
         <ResourceDictionary>
             <Color
@@ -51,7 +49,7 @@
                 BasedOn   ="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-    <!-- Your Pages -->
+
     <TabBar>
         <Tab
             Title="Stacje"
@@ -61,39 +59,18 @@
         </Tab>
 
          <Tab
-            Title="About"
+            Title="Default"
             Icon ="tab_about.png">
             <ShellContent
-                ContentTemplate="{DataTemplate local:AboutPage}" />
+                ContentTemplate="{DataTemplate local:DefaultControlsPage}" />
+        </Tab>
+
+         <Tab
+            Title="Visual"
+            Icon ="tab_about.png">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:VisualControlsPage}" />
         </Tab>
     </TabBar>
-    <!-- Optional Templates 
-    // These may be provided inline as below or as separate classes.
 
-    // This header appears at the top of the Flyout.
-    <Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <Grid>ContentHere</Grid>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
-
-    // ItemTemplate is for ShellItems as displayed in a Flyout
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Title, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.ItemTemplate>
-
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Text, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>
-
-    -->
 </Shell>
