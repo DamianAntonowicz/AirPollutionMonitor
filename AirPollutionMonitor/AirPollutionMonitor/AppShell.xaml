@@ -6,6 +6,7 @@
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        mc:Ignorable="d"
        xmlns:local="clr-namespace:AirPollutionMonitor.Views"
+       xmlns:resources="clr-namespace:AirPollutionMonitor"
        Title="AirPollutionMonitor"
        x:Class="AirPollutionMonitor.AppShell">
 
@@ -54,7 +55,7 @@
 
     <TabBar>
         <Tab
-            Title="Stacje"
+            Title="{x:Static resources:AppResources.AppShell_Stations}"
             Icon="tab_feed.png">
             <ShellContent
                 ContentTemplate="{DataTemplate local:StationsPage}" />
